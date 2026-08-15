@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="max-w-3xl">
           <span className="inline-flex animate-fade-in items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-white backdrop-blur">
             <LuLeaf className="h-4 w-4 text-gold-300" />
-            Nigeria&apos;s Agro-Waste Circular Economy
+           Nigeria's Agro-Waste Supply Network
           </span>
 
           <h1
@@ -36,10 +36,9 @@ export default function Hero() {
             className="mt-6 max-w-2xl animate-fade-up text-lg leading-relaxed text-white/85"
             style={{ animationDelay: "0.25s" }}
           >
-            We collect rice husks, maize cobs, cassava peels, palm kernel
-            shells, coconut shells and sawdust — and transform them into biomass
-            fuel, biochar, compost and eco materials that power communities and
-            restore the land.
+            We source and aggregate quality agricultural residues from across Nigeria and connect them with industries that need sustainable raw materials.
+            From cassava peels and rice husks to palm kernel shells, maize residues and other agricultural by-products, RecycleHarvest 
+            Africa builds reliable supply chains for industrial customers across Nigeria, Africa and Europe.
           </p>
 
           <div

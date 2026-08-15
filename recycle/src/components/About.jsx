@@ -48,8 +48,8 @@ export default function About() {
             <span className="h-px w-8 bg-gold-500" /> About Recycle Harvest
             Africa
           </span>
-          <h2 className="section-title mt-4">
-            An African business built on the belief that{" "}
+          <h2 className="section-title text-2xl mt-4">
+            Agricultural waste should be treated as a resource, not merely as waste.{" "}
             <span className="text-forest-600">waste is a resource</span>
           </h2>
           <p className="lead mt-5">
