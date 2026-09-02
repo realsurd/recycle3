@@ -24,11 +24,9 @@ export const materials = [
     icon: GiGrain,
     image:
       "https://images.pexels.com/photos/11723484/pexels-photo-11723484.jpeg?auto=compress&cs=tinysrgb&w=800",
-    desc: "Collected from rice mills across Benue, Kebbi and Ebonyi to produce biomass briquettes and biochar.",
+    desc: "Sourced from rice mills and processing centres for bulk industrial and biomass-related applications. Supply is arranged according to buyer specifications and seasonal availability.",
     outputs: [
-      "Biomass briquettes",
-      "Biochar soil amendment",
-      "Ash-based cement",
+      "Common buyer applications: biomass feedstock, silica/ash processing, industrial raw material.",
     ],
   },
   {
@@ -37,7 +35,9 @@ export const materials = [
     image:
       "https://images.pexels.com/photos/34623758/pexels-photo-34623758.jpeg?auto=compress&cs=tinysrgb&w=800",
     desc: "Post-harvest corncobs are densified into high-heat fuel pellets and livestock feed blends.",
-    outputs: ["Fuel pellets", "Animal feed blend", "Absorbent bedding"],
+    outputs: [
+      "Common buyer applications: biomass processing, absorbent products, further industrial processing.",
+    ],
   },
   {
     name: "Cassava Peels",
@@ -45,7 +45,9 @@ export const materials = [
     image:
       "https://images.pexels.com/photos/7543161/pexels-photo-7543161.jpeg?auto=compress&cs=tinysrgb&w=800",
     desc: "Peels from processing centres are detoxified and dried into livestock feed and organic compost.",
-    outputs: ["Livestock feed", "Organic compost", "Biogas feedstock"],
+    outputs: [
+      "Specifications may include moisture, cleanliness, form, and packaging requirements.",
+    ],
   },
   {
     name: "Palm Kernel Shells",
@@ -53,7 +55,9 @@ export const materials = [
     image:
       "https://images.pexels.com/photos/3246155/pexels-photo-3246155.jpeg?auto=compress&cs=tinysrgb&w=800",
     desc: "Hard shells from palm oil mills are converted into premium activated carbon and clean cookstove fuel.",
-    outputs: ["Activated carbon", "Cookstove fuel", "Bio-oil"],
+    outputs: [
+      "Common buyer applications: biomass fuel feedstock, charcoal and activated-carbon manufacturing, industrial heat.",
+    ],
   },
   {
     name: "Coconut Shells",
@@ -61,7 +65,9 @@ export const materials = [
     image:
       "https://images.pexels.com/photos/7676875/pexels-photo-7676875.jpeg?auto=compress&cs=tinysrgb&w=800",
     desc: "Coconut shells are processed into high-grade charcoal, gardening chips and craft materials.",
-    outputs: ["Coconut charcoal", "Mulch chips", "Craft raw material"],
+    outputs: [
+      "Common buyer applications: charcoal, activated-carbon production, and other industrial processing.",
+    ],
   },
   {
     name: "Sawdust & Wood Waste",
@@ -69,58 +75,65 @@ export const materials = [
     image:
       "https://images.pexels.com/photos/4888860/pexels-photo-4888860.jpeg?auto=compress&cs=tinysrgb&w=800",
     desc: "Sawmill residues are compacted into wood pellets and used as a binder in biomass products.",
-    outputs: ["Wood pellets", "Briquette binder", "Mushroom substrate"],
+    outputs: [
+      "Common buyer applications: biomass processing, pellets/briquettes manufacturing, industrial feedstock.",
+    ],
   },
 ];
 
 export const services = [
   {
-    title: "Agro-Waste Collection",
+    title: "Supplier Sourcing",
     icon: LuRecycle,
-    desc: "Doorstep and on-farm collection of crop residues through a network of aggregation hubs across Nigeria.",
+    desc: "We identify farmers, mills, processors, and local suppliers capable of providing the required agricultural material.",
   },
   {
-    title: "Biomass Fuel Production",
+    title: "Aggregation & Volume Consolidation",
     icon: FiZap,
-    desc: "Densifying waste into clean-burning briquettes and pellets that replace firewood and fossil fuels.",
+    desc: "Where one source cannot meet the required quantity, we coordinate supply from multiple approved sources and consolidate volumes.",
   },
   {
-    title: "Bio-Compost & Soil Care",
+    title: "Specification & Quality Coordination",
     icon: FiTrash2,
-    desc: "Composting organic residues into nutrient-rich soil amendments that restore depleted farmland.",
+    desc: "We work from the buyer’s requirements and coordinate checks for relevant factors such as material type, moisture, cleanliness, size, condition, and packaging.",
   },
   {
-    title: "Biochar & Activated Carbon",
+    title: "Packaging & Order Preparation",
     icon: FiSun,
-    desc: "Pyrolysis of shells and husks into carbon-rich products for agriculture and water filtration.",
+    desc: "We coordinate suitable packaging, handling, storage, and load preparation based on the product and agreed shipment terms.",
   },
   {
-    title: "Eco Packaging Materials",
+    title: "Export Documentation & Logistics Coordination",
     icon: FiPackage,
-    desc: "Moulding agro-fibres into biodegradable packaging, trays and disposable ware.",
+    desc: "We support the commercial documentation and logistics coordination required to move orders from Nigeria to the buyer’s destination, working with appropriate logistics and trade-service providers.",
   },
   {
-    title: "Clean Energy Advisory",
+    title: "Recurring & Contract Supply",
     icon: FiDroplet,
-    desc: "Helping farms and factories switch to biomass energy and cut their carbon footprint.",
+    desc: "For buyers with ongoing demand, we can structure repeat sourcing schedules and supply programmes around forecasted volume requirements.",
   },
 ];
 
 export const steps = [
   {
-    title: "Collection & Aggregation",
-    desc: "We partner with farming communities, mills and agro-processors to collect residues at source through rural aggregation hubs.",
+    title: "Buyer Requirement",
+    desc: "You tell us the material you need, target specification, quantity, packaging preference, destination, and expected delivery schedule.",
     badge: "01",
   },
   {
-    title: "Sorting & Processing",
-    desc: "Waste is sorted, cleaned, dried and shredded at our facilities using low-emission mechanical processing lines.",
+    title: "Supplier Sourcing & Aggregation",
+    desc: "We identify suitable sources within our network, confirm availability, and consolidate volume from farmers, mills, processors, or aggregators as required.",
     badge: "02",
   },
   {
-    title: "Transformation & Output",
-    desc: "Processed material is densified, composted or pyrolysed into briquettes, pellets, biochar, compost and eco packaging.",
+    title: "Quality & Specification Check",
+    desc: "The material is checked against the agreed commercial requirements before final shipment preparation. Third-party inspection can be coordinated when requested or required .",
     badge: "03",
+  },
+  {
+    title: "Packaging, Documentation & Export",
+    desc: "We coordinate packaging, loading, export documentation, and logistics arrangements based on the agreed Incoterms and shipment plan.",
+    badge: "04",
   },
 ];
 

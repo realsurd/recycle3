@@ -7,17 +7,19 @@ export default function Materials() {
       <div className="container-x">
         <div className="reveal mx-auto max-w-2xl text-center">
           <span className="eyebrow justify-center">
-            <span className="h-px w-8 bg-gold-500" /> What We Handle &amp; Offer
+            <span className="h-px w-8 bg-gold-500" /> Products & Materials
             <span className="h-px w-8 bg-gold-500" />
           </span>
           <h2 className="section-title mt-4">
-            From farm residues to{" "}
-            <span className="text-forest-600">valuable products</span>
+            Agricultural Materials Sourced for{" "}
+            <span className="text-forest-600"> Bulk Supply & Export</span>
           </h2>
-          <p className="lead mt-4">
-            We collect seven core agro-waste streams and turn them into a
-            growing range of renewable materials, biomass solutions and
-            sustainable resources.
+          <p className="lead mt-4 text-lg">
+            We source a range of agricultural by-products and raw materials from
+            Nigerian farms, mills, and processors. Availability, moisture level,
+            cleanliness, particle size, packaging, quantity, and other
+            specifications can be matched to buyer requirements where
+            commercially feasible.
           </p>
         </div>
 
@@ -26,38 +28,60 @@ export default function Materials() {
           {materials.map((m, i) => (
             <article
               key={m.name}
-              className="reveal group card overflow-hidden hover:-translate-y-1.5 hover:shadow-xl"
+              className="reveal group card flex h-full flex-col overflow-hidden hover:-translate-y-1.5 hover:shadow-xl"
               style={{ transitionDelay: `${i * 0.08}s` }}
             >
-              <div className="relative h-52 overflow-hidden">
+              <div className="relative h-52 shrink-0 overflow-hidden">
                 <img
                   src={m.image}
                   alt={m.name}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
                 />
+
                 <div className="absolute inset-0 bg-gradient-to-t from-forest-900/70 via-forest-900/10 to-transparent" />
+
                 <span className="absolute left-4 top-4 flex h-11 w-11 items-center justify-center rounded-xl bg-white/90 text-forest-600 shadow-md backdrop-blur">
                   <m.icon className="h-6 w-6" />
                 </span>
+
                 <h3 className="absolute bottom-3 left-4 font-display text-xl font-bold text-white">
                   {m.name}
                 </h3>
               </div>
-              <div className="p-5">
+
+              <div className="flex flex-1 flex-col p-5">
                 <p className="text-sm leading-relaxed text-forest-800/80">
                   {m.desc}
                 </p>
-                <ul className="mt-4 flex flex-wrap gap-2">
-                  {m.outputs.map((o) => (
-                    <li
-                      key={o}
-                      className="rounded-full bg-forest-50 px-3 py-1 text-xs font-medium text-forest-700"
-                    >
-                      {o}
-                    </li>
-                  ))}
-                </ul>
+
+                <div className="mt-auto pt-5">
+                  {m.outputs.map((o) => {
+                    const hasApplicationLabel = o.startsWith(
+                      "Common buyer applications:",
+                    );
+
+                    return (
+                      <div
+                        key={o}
+                        className="border-t border-forest-900/10 pt-4"
+                      >
+                        {hasApplicationLabel ? (
+                          <p className="text-xs leading-5 text-forest-700">
+                            <span className="font-semibold">
+                              Common buyer applications:
+                            </span>{" "}
+                            {o.replace("Common buyer applications:", "").trim()}
+                          </p>
+                        ) : (
+                          <p className="text-xs leading-5 text-forest-700">
+                            {o}
+                          </p>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </article>
           ))}
@@ -69,8 +93,7 @@ export default function Materials() {
             Our Services
           </h3>
           <p className="reveal mx-auto mt-3 max-w-xl text-center text-forest-800/80">
-            End-to-end solutions that move agro-waste from the farm to useful,
-            market-ready products.
+            End-to-End Agricultural Sourcing & Export Support
           </p>
 
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

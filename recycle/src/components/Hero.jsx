@@ -21,24 +21,27 @@ export default function Hero() {
         <div className="max-w-3xl">
           <span className="inline-flex animate-fade-in items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-white backdrop-blur">
             <LuLeaf className="h-4 w-4 text-gold-300" />
-           Nigeria's Agro-Waste Supply Network
+            Nigeria’s Agricultural Sourcing & Export Partner
           </span>
 
           <h1
-            className="mt-6 animate-fade-up font-display text-4xl font-bold leading-[1.08] text-white sm:text-5xl lg:text-6xl"
+            className="mt-6 animate-fade-up font-display text-4xl font-bold leading-[1.08] text-white sm:text-5xl lg:text-3xl"
             style={{ animationDelay: "0.1s" }}
           >
-            Turning Nigerian Farm Waste Into{" "}
-            <span className="text-gold-300">Sustainable Wealth</span>
+            Connecting{" "}
+            <span className="text-gold-300">Nigerian Agricultural</span> Supply
+            With Global Demand
           </h1>
 
           <p
             className="mt-6 max-w-2xl animate-fade-up text-lg leading-relaxed text-white/85"
             style={{ animationDelay: "0.25s" }}
           >
-            We source and aggregate quality agricultural residues from across Nigeria and connect them with industries that need sustainable raw materials.
-            From cassava peels and rice husks to palm kernel shells, maize residues and other agricultural by-products, RecycleHarvest 
-            Africa builds reliable supply chains for industrial customers across Nigeria, Africa and Europe.
+            We source agricultural by-products, residues, and selected agro
+            commodities from trusted farmers, mills, processors, and local
+            suppliers across Nigeria. We aggregate dependable volumes, match
+            buyer specifications, and coordinate export ready supply for
+            companies and industrial customers abroad.
           </p>
 
           <div
@@ -46,7 +49,7 @@ export default function Hero() {
             style={{ animationDelay: "0.4s" }}
           >
             <a href="#contact" className="btn-gold group">
-              Request a Quote
+              Request a Supply Quote
               <FiArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
@@ -60,13 +63,14 @@ export default function Hero() {
 
           {/* Mini stats */}
           <div
-            className="mt-14 grid max-w-2xl animate-fade-up grid-cols-3 gap-4 border-t border-white/20 pt-6"
+            className="mt-10 grid max-w-2xl animate-fade-up grid-cols-4 gap-2 border-t border-white/20 pt-6 flex- justify-center text-center text-xs text-white/70 sm:max-w-3xl sm:text-sm"
             style={{ animationDelay: "0.55s" }}
           >
             {[
-              { value: "12,500+", label: "Tonnes recovered" },
-              { value: "48", label: "Rural hubs" },
-              { value: "3,400+", label: "Farmers supported" },
+              { value: "X+", label: "Tonnes Supplied " },
+              { value: "X+", label: "Sourcing Partners" },
+              { value: "X+", label: "Product Categories" },
+              { value: "X+", label: "Export Markets Served" },
             ].map((s) => (
               <div key={s.label}>
                 <p className="font-display text-2xl font-bold text-white sm:text-3xl">

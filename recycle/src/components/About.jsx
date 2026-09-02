@@ -2,9 +2,10 @@ import { FiCheck, FiArrowRight } from "react-icons/fi";
 import { images } from "../data/content";
 
 const pillars = [
-  "Collecting waste that farmers used to burn or dump",
-  "Engineering it into fuel, compost and eco materials",
-  "Reinvesting income into rural farming communities",
+  "Local sourcing relationships across agricultural communities and processing clusters.",
+  "Buyer-led procurement based on required material, quantity, quality, and delivery terms.",
+  "Aggregation of supply from multiple approved sources when larger volumes are required.",
+  "Coordination of export documentation and shipment preparation for international orders.",
 ];
 
 export default function About() {
@@ -49,20 +50,29 @@ export default function About() {
             Africa
           </span>
           <h2 className="section-title text-2xl mt-4">
-            Agricultural waste should be treated as a resource, not merely as waste.{" "}
-            <span className="text-forest-600">waste is a resource</span>
+            Built to Make{" "}
+            <span className="text-forest-600">
+              {" "}
+              Nigerian Agricultural Supply
+            </span>{" "}
+            Easier to Source Globally.{" "}
           </h2>
           <p className="lead mt-5">
-            Recycle Harvest Africa is a Nigerian agro-waste recycling company
-            bridging the gap between agriculture and sustainability. Every
-            harvest season, millions of tonnes of crop residues are burned or
-            dumped across Nigeria — releasing carbon, wasting nutrients and
-            polluting rural air.
+            Recycle Africa is a Nigerian sourcing, supply, and export company
+            focused on agricultural by-products, agro residues, and other high
+            demand agricultural materials. We work directly with farmers,
+            processing centres, mills, aggregators, and local suppliers to
+            identify dependable sources and consolidate commercial volumes for
+            buyers. Our role is to simplify procurement. Instead of an overseas
+            buyer managing many small suppliers, inconsistent volumes, and
+            fragmented logistics, we coordinate the supply chain locally from
+            sourcing and aggregation to specification checks, packaging
+            coordination, documentation, and export preparation.
           </p>
           <p className="lead mt-4">
-            We reframe that waste as raw material. By collecting residues at
-            source and processing them into biomass fuel, biochar, compost and
-            eco packaging, we create value for farmers, industry and the planet.
+            We help Nigerian producers reach larger markets while giving
+            international buyers a more reliable route to agricultural materials
+            from Nigeria.
           </p>
 
           <ul className="mt-7 space-y-3">
